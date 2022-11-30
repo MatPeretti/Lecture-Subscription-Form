@@ -33,7 +33,7 @@ const removeClassErrorMail = () => {
     const inputMailIsValid = validateInputMail();
 
     if (inputMailIsValid) {
-        return inputElementMail.classList.remove("error")
+        return inputElementMail.classList.remove("error");
     }
 }
 
