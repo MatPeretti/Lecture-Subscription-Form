@@ -1,8 +1,6 @@
 const inputElementName = document.getElementById("name");
 const inputElementMail = document.getElementById("email");
 
-const subscribeButton = document.getElementById("main-button");
-
 
 const validateInputName = () => inputElementName.value.trim().length > 0;
 const validateInputMail = () => inputElementMail.value.trim().length > 0;
