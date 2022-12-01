@@ -88,7 +88,7 @@ select, select:hover{
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-image: url("/images/arrow.jpg");
+  background-image: url("/images/arroww.jpg");
   background-repeat: no-repeat;
   background-position-x: calc(100% - 10px);
   background-position-y: center;
@@ -102,7 +102,7 @@ footer{
   border-radius: 2px;
 }
 
-/* error class created in JavaScript */
+/*error class created in JavaScript*/
 .error {
   border: 1px solid crimson !important;
 }
