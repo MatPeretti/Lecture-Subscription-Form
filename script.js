@@ -1,7 +1,6 @@
 const inputElementName = document.getElementById("name");
 const inputElementMail = document.getElementById("email");
 
-
 const validateInputName = () => inputElementName.value.trim().length > 0;
 const validateInputMail = () => inputElementMail.value.trim().length > 0;
 
@@ -36,8 +35,6 @@ const removeClassErrorMail = () => {
         return inputElementMail.classList.remove("error");
     }
 }
-
-
 
 inputElementName.addEventListener("click", () => handleInputName());
 inputElementName.addEventListener("change", () => removeClassErrorName());
