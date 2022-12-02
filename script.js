@@ -16,14 +16,3 @@ const handleInput = (element) => {
 ['click','keyup'].forEach( event => 
     inputMail.addEventListener(event, () => handleInput(inputMail))
 );
-
-
-
-
-
-
-
-
-
-
-
