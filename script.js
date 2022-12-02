@@ -1,45 +1,29 @@
-const inputElementName = document.getElementById("name");
-const inputElementMail = document.getElementById("email");
+const inputName = document.getElementById("name");
+const inputMail = document.getElementById("email");
 
-const validateInputName = () => inputElementName.value.trim().length > 0;
-const validateInputMail = () => inputElementMail.value.trim().length > 0;
+const validateInput = (element) => element.value.trim().length > 0;
 
-const handleInputName = () => {
-    const inputNameIsValid = validateInputName();
-
-    if (!inputNameIsValid) {
-        return inputElementName.classList.add("error");
-    } 
+const handleInput = (element) => {
+    const isValid = validateInput(element);
+    element.classList.toggle("error", !isValid);
+    return isValid;
 }
 
-const handleInputMail = () => {
-    const inputMailIsValid = validateInputMail();
+['click', 'keyup'].forEach( event => 
+    inputName.addEventListener(event, () => handleInput(inputName))
+);
 
-    if (!inputMailIsValid) {
-        return inputElementMail.classList.add("error");
-    }
-}
+['click','keyup'].forEach( event => 
+    inputMail.addEventListener(event, () => handleInput(inputMail))
+);
 
-const removeClassErrorName = () => {
-    const inputNameIsValid = validateInputName();
 
-    if (inputNameIsValid){
-        return inputElementName.classList.remove("error");
-    }
-}
 
-const removeClassErrorMail = () => {
-    const inputMailIsValid = validateInputMail();
 
-    if (inputMailIsValid) {
-        return inputElementMail.classList.remove("error");
-    }
-}
 
-inputElementName.addEventListener("click", () => handleInputName());
-inputElementName.addEventListener("change", () => removeClassErrorName());
-inputElementMail.addEventListener("click", () => handleInputMail());
-inputElementMail.addEventListener("change", () => removeClassErrorMail());
+
+
+
 
 
 
