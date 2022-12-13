@@ -76,6 +76,8 @@ button{
   border: none;
   margin-bottom: 10px;
   border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
   
 }
 
