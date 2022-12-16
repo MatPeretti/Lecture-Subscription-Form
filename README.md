@@ -1,5 +1,5 @@
 # :bookmark: Lecture Subscription Form
-- Welcome to the Lecture Subscription Form! The page promotes a upcoming lecture with a form, integrated with Mailchimp that is a comprehensive email marketing platform, where is possible to contact all the people who subscribed to the event.
+- Welcome to the Lecture Subscription Form! The page promotes a upcoming lecture where you can subscribe via a form, and is integrated with Mailchimp that is a comprehensive email marketing platform, where is possible to contact all the people who subscribed to the event.
 
 # :hammer: Features
 - Easy to use subscription form
