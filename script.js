@@ -1,5 +1,5 @@
-const inputName = document.getElementById("name");
-const inputMail = document.getElementById("email");
+const inputName = document.getElementById('name');
+const inputMail = document.getElementById('email');
 
 const validateInput = (element) => element.value.trim().length > 0;
 
